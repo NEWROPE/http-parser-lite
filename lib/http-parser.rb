@@ -1,4 +1,4 @@
-require 'http-parser/http_parser'
+require [Gem.loaded_specs['http-parser-lite'].extension_dir, 'http_parser'].join('/')
 
 module HTTP
   class Parser
